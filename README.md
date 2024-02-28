@@ -1,4 +1,4 @@
-# Semantic segmentation model for 4 class: green, water, non-Green, cloud.
+# Semantic segmentation model for 4 class: green, water, non-green, cloud.
 
 ## Usage
 
