@@ -7,7 +7,7 @@ from tensorflow.keras import layers
 def U2Net_dilated(pretrainable = False, dilation_size = 9, U2Net_version = 2, input_size = 512, n_channel = 4, n_class = 4):
   args = dict(input_size=input_size, n_channel=n_channel, n_class=n_class)
   aug_model = separator(**args)
-  aug_model.load_weights("/content/drive/MyDrive/ColabShared/Checkpoint/Multiclass_segmentation/PoolsAT_separator_17_02_v2_last.weights.h5")
+#   aug_model.load_weights("") # load model pretrained, only for training
   aug_model.trainable = pretrainable
   # aug_model = tf.keras.Model(inputs= aug_model.input, outputs = aug_model.get_layer("latent_last").output)
 
