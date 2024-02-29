@@ -1,4 +1,4 @@
-# Semantic segmentation model for 4 band aerial image that segments 4 class: green, water, non-green, cloud.
+# Semantic segmentation model for 4 bands aerial images that segments 4 classes: green, water, non-green, cloud.
 
 ## Usage
 
