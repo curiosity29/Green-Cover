@@ -40,6 +40,7 @@ def predict(image_path = "./image.tif", save_path = "./prediction.tif", weight_p
     def get_model(weight_path, args):
         model = MainModel.U2Net_dilated(**args)
         model.load_weights(weight_path)
+        return model
 
     model = get_model(weight_path, args)
     predictor = partial(predict_adapter, model = model)
