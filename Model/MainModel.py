@@ -1,11 +1,11 @@
-from separator import separator
-from U2Net import U2Net_augment
+from .separator import separator
+from .U2Net import U2Net_augment
 import Configs
 import tensorflow as tf
 from tensorflow.keras import layers
 
 def U2Net_dilated(pretrainable = False, dilation_size = 9, U2Net_version = 2, input_size = 512, n_channel = 4, n_class = 4):
-  args = dict(input_size=input_size, n_channel=n_channel, n_class=n_class)
+  args = dict(input_size=input_size, n_channel=n_channel, n_class=n_class, output_size = input_size)
   aug_model = separator(**args)
 #   aug_model.load_weights("") # load model pretrained, only for training
   aug_model.trainable = pretrainable

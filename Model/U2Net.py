@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras import layers
-from Blocks import CoBaRe, CoSigUp
+from .Blocks import CoBaRe, CoSigUp
 import Configs
 
 ##################

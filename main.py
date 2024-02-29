@@ -48,6 +48,6 @@ def predict(image_path = "./image.tif", save_path = "./prediction.tif", weight_p
                     window_size = 512, input_dim = input_dim, predict_dim = predict_dim,
                     output_type = "float32", batch_size = batch_size)
 
-if __name__ == "main":
+if __name__ == "__main__":
     main_args = get_main_args()
     predict(**vars(main_args))
