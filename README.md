@@ -6,9 +6,10 @@
 python main.py --weight_path <path to model weights>
 --image_path <path to input image>
 --save_path <path to save output image>
+--batch_size <number of image to process at the same step>
 --strength <float value, amplifier for small region>
 ```
-or use the default value with all the file is in the corresponding folder and strength = 3
+or use the default value with all the file is in the corresponding folder, batch_size = 4, and strength = 3
 ```
 python main.py
 ```
