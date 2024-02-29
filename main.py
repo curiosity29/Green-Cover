@@ -43,7 +43,7 @@ def predict(image_path = "./image.tif", save_path = "./prediction.tif", weight_p
         return model
 
     model = get_model(weight_path, args)
-    predictor = partial(predict_adapter, model = model)
+    predictor = partial(predict_adapter, model = model, strength = strength)
 
     predict_windows(pathTif = image_path, pathSave = save_path, predictor = predictor, preprocess = preprocess,
                     window_size = 512, input_dim = input_dim, predict_dim = predict_dim,
